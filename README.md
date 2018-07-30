@@ -13,7 +13,11 @@ and on Mac OS 12 using the command:
 ```
 mex FFLAGS='-fdefault-real-8 -ffixed-form -compatibleArrayDims' glmnetMex.F GLMnet.f
 ```
-Note that these commands are different from the author-recommended commands for [Windows](https://web.stanford.edu/~hastie/glmnet_matlab/win64compile.html) and [Mac](https://web.stanford.edu/~hastie/glmnet_matlab/mac64compile.html). The '-compatibleArrayDims' option compiles the FORTRAN code using the 32-bit API, which may be deprecated in future MATLAB releases. The permanent solution is to [modify the FORTRAN source to be 64-bit compliant](https://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html), which I might get around to if I have something extremely important to procrastinate on.
+Note that these commands are different from the author-recommended commands for [Windows](https://web.stanford.edu/~hastie/glmnet_matlab/win64compile.html) and [Mac](https://web.stanford.edu/~hastie/glmnet_matlab/mac64compile.html). The 
+```
+-compatibleArrayDims
+```
+option compiles the FORTRAN code using the 32-bit API, which may be deprecated in future MATLAB releases. The permanent solution is to [modify the FORTRAN source to be 64-bit compliant](https://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html), which I might get around to if I have something extremely important to procrastinate on.
 
 Please remember to cite the authors if you use glmnet!
 Glmnet for Matlab (2013) Qian, J., Hastie, T., Friedman, J., Tibshirani, R. and Simon, N.
