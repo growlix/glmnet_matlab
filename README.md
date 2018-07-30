@@ -24,4 +24,4 @@ Please remember to cite the authors if you use glmnet:
 Glmnet for Matlab (2013) Qian, J., Hastie, T., Friedman, J., Tibshirani, R. and Simon, N.
 http://www.stanford.edu/~hastie/glmnet_matlab/
 ```
-Also check out this [interesting speed comparison](https://modelingguru.nasa.gov/docs/DOC-2676) between MATLAB, Python, Julia, R, and other languages.
+Also check out this [interesting speed comparison](https://modelingguru.nasa.gov/docs/DOC-2676) between MATLAB, Python, Julia, R, and a bunch other languages.
