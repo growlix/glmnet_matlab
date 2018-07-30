@@ -19,8 +19,9 @@ Note that these commands are different from the author-recommended commands for 
 ```
 option compiles the FORTRAN code using the 32-bit API, which may be deprecated in future MATLAB releases. The permanent solution is to [modify the FORTRAN source to be 64-bit compliant](https://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html), which I might get around to if I have something extremely important to procrastinate on.
 
-Please remember to cite the authors if you use glmnet!
+Please remember to cite the authors if you use glmnet:
+```
 Glmnet for Matlab (2013) Qian, J., Hastie, T., Friedman, J., Tibshirani, R. and Simon, N.
 http://www.stanford.edu/~hastie/glmnet_matlab/
-
+```
 Check out this [interesting speed comparison](https://modelingguru.nasa.gov/docs/DOC-2676) between MATLAB, Python, Julia, R, and other languages.
