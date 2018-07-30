@@ -17,7 +17,7 @@ Note that these commands are different from the author-recommended commands for 
 ```
 -compatibleArrayDims
 ```
-option compiles the FORTRAN code using the 32-bit API, which may be deprecated in future MATLAB releases. The permanent solution is to [modify the FORTRAN source to be 64-bit compliant](https://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html), which you should do because you're a good person, or I should do if I have something extremely important to procrastinate on.
+option compiles the FORTRAN code using the 32-bit API, which may be deprecated in future MATLAB releases. The permanent solution is to [modify the FORTRAN source to be 64-bit compliant](https://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html), which you should do because you're a good person, or I should do if I have something extremely imposing to procrastinate on.
 
 Please remember to cite the authors if you use glmnet:
 ```
