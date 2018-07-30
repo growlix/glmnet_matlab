@@ -1,7 +1,7 @@
 # glmnet_matlab
 glmnet for MATLAB compiled for compatibility with 64-bit Windows 10 and Mac OS systems.
 ## Details
-[glmnet](https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html) is an extremely efficient toolbox for fitting lasso and elastic-net regularized generalized linear models. Unfortunately the [glmnet for MATLAB files](https://web.stanford.edu/~hastie/glmnet_matlab/) provided by the authors are not compatible with newer versions of MATLAB, Mac OS, and Windows 10. This is a shame, because glmnet for MATLAB is orders of magnitude faster than other similar packages. Thus I recompiled the mex files in this repository to be compatible with modern systems; I have tested them with MATLAB 2017a in Mac OS 12 and Windows 10.
+[glmnet](https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html) is an extremely efficient toolbox for fitting lasso and elastic-net [regularized](https://en.wikipedia.org/wiki/Regularization_(mathematics)) [generalized linear models](https://en.wikipedia.org/wiki/Generalized_linear_model). Unfortunately the [glmnet for MATLAB files](https://web.stanford.edu/~hastie/glmnet_matlab/) provided by the authors are not compatible with newer versions of MATLAB, Mac OS, and Windows 10. This is a shame, because glmnet for MATLAB is orders of magnitude faster than other similar packages. Thus I recompiled the mex files in this repository to be compatible with modern systems; I have tested them with MATLAB 2017a in Mac OS 12 and Windows 10.
 ## Background
 glmnet for MATLAB is fast because the core function is implemented in [FORTRAN](https://en.wikipedia.org/wiki/Fortran), a language beloved for its use in [weather prediction](https://imgur.com/gallery/EeI8V3E) but divisive for its [one-based indexing](https://en.wikipedia.org/wiki/Zero-based_numbering). MATLAB can call FORTRAN (and C/C++) functions via [MEX](https://www.mathworks.com/help/matlab/matlab_external/introducing-mex-files.html) tools, but doing so requires a FORTRAN (or C/C++) compiler, which can be a hassle to obtain.
 ## Implementation
@@ -23,4 +23,4 @@ Please remember to cite the authors if you use glmnet!
 Glmnet for Matlab (2013) Qian, J., Hastie, T., Friedman, J., Tibshirani, R. and Simon, N.
 http://www.stanford.edu/~hastie/glmnet_matlab/
 
-Also check out this interesting [speed comparison]((https://modelingguru.nasa.gov/docs/DOC-2676) between Python, Julia, Matlab, R, and other languages.
+Check out this [interesting speed comparison](https://modelingguru.nasa.gov/docs/DOC-2676) between MATLAB, Python, Julia, R, and other languages.
